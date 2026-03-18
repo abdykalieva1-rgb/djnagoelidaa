@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7e22d83-8907-4037-8609-f2d7c570a03c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/DjangoProject2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DjangoProject2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/dateil.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/dateil.css" afterDir="false" />
-    </list>
+    <list default="true" id="c7e22d83-8907-4037-8609-f2d7c570a03c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
