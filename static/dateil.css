@@ -3,8 +3,9 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  padding: 10px;
-   height: 500px;
+  padding: 4px;
+   height: 720px;
+   background:#F8F8FF;
 
 
 }
@@ -12,7 +13,7 @@
 .card {
 
 
-  background: white;
+  background: #FFFAF0;
   border-radius: 50px;
    overflow: visible;
   box-shadow:10px;
