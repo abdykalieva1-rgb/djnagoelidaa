@@ -196,3 +196,17 @@
   visibility: visible;
   transform: scale(1);
 }
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 200px;
+}
+
+.views-container {
+    align-self: flex-end;
+    margin-top: auto;
+    color: #888;
+    font-size: 0.9em;
+}

@@ -18,14 +18,19 @@
       <img src="{{ car.image.url }}" alt="{{ car.name }}" class="card-img">
     {% endif %}
 
-    <div class="card-info">
-      <div class="card-about">
-        <div class="card-time">{{ car.year }}</div>
-      </div>
-      <h1 class="card-title">{{ car.name}}</h1>
-      <div class="card-creator">{{ car.discriptions }}</div>
-        <div class="creator">Цена:{{ car.price}}$</div>
+   <div class="card-info">
+    <div class="card-about">
+      <div class="card-time">{{ car.year }}</div>
     </div>
+    <h1 class="card-title">{{ car.name }}</h1>
+    <div class="card-creator">{{ car.discriptions }}</div>
+
+    <div class="creator"><b>Цена:</b> {{ car.price }} $</div>
+
+    <div class="creator">
+        <span style="color: #888;">👁 Просмотров: {{ car.views }}</span>
+    </div>
+</div>
 
   </div>
 </div>

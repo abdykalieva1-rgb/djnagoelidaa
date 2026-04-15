@@ -7,25 +7,41 @@ def product(request):
     return render(request, 'product.html')
 
 
+from django.db.models import Q
+
+
 def next_to_page(request):
+    # Получаем значение из поля 'q' (как указано в вашем HTML)
+    query = request.GET.get('q')
+
     cars = Car.objects.all()
+
+    if query:
+        # Фильтруем по названию или цвету
+        cars = cars.filter(
+            Q(name__icontains=query) |
+            Q(color__icontains=query)
+        )
+
+    # Используем values_list, чтобы эффективно проверить наличие в избранном
     favorite_ids = Favorite.objects.values_list('car_id', flat=True)
 
     context = {
         'cars': cars,
-        'favorite_ids': favorite_ids,
+        'favorite_ids': list(favorite_ids),
+        'query': query,  # Передаем обратно, чтобы текст не исчезал из инпута
     }
     return render(request, 'next_page.html', context)
 
-
 def car_dateil(request, id):
     car = get_object_or_404(Car, id=id)
+    car.views += 1
+    car.save(update_fields=['views'])
 
     context = {
         'car': car
     }
     return render(request, 'car_dateil.html', context)
-
 
 def favorites_page(request):
     favorites = Favorite.objects.select_related('car').all()
